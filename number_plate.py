@@ -20,7 +20,7 @@ captured_image = ""  # Store the path of the captured image
 extracted_text = ""  # Store the extracted text
 
 # Initialize EasyOCR reader
-reader = easyocr.Reader(['en'])
+reader = easyocr.Reader(['en'], gpu=False)
 
 def capture_image():
     """Function to capture an image from the webcam and detect plates."""
