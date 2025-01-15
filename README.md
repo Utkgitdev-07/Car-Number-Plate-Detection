@@ -4,24 +4,26 @@ This project is designed for detecting Russian car number plates using a webcam.
 
 ## Project Structure 
 
-Car-Number-Plate-Detection/
-│
-├── model/
+Car-Number-Plate-Detection
+
+
+├── model
 │   └── haarcascade_russian_plate_number.xml      # Haarcascade classifier for detecting Russian plates
-│
-├── static/
+
+├── static
 │   ├── styles.css                               # CSS styles for the web page
 │   └── background.jpg                          # Background image for the web page
-│
-├── template/
+
+├── template
 │   └── index.html                              # HTML file for the main page
-│
-├── number_plates/                              # Folder to save captured number plates
-│
+
+├── number_plates                              # Folder to save captured number plates
+
 ├── requirements.txt                            # List of dependencies to install
+
 ├── number_plate.py                             # Main script with Flask API for capturing plates and OCR
-│
-└── notes.txt                                   # Project-related notes
+
+
 
 ## Prerequisites
 
