@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Plate Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Plate Detection</h1>
+        <button onclick="captureImage()">Capture Plate</button>
+        <div id="result">
+            <p id="output"></p>
+            <img id="plateImage" src="" alt="Captured Plate" style="display: none;">
+        </div>
+    </div>
+
+    <script>
+        function captureImage() {
+            fetch('/capture', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.filename) {
+                        const plateImage = document.getElementById("plateImage");
+                        const output = document.getElementById("output");
+
+                        // Make sure the path is correct
+                        plateImage.src = `/show/${data.filename.split('/').pop()}`;
+                        plateImage.style.display = "block";
+                        output.innerText = `Extracted Text: ${data.text}`;
+                    } else {
+                        alert(data.error || "An error occurred.");
+                    }
+                })
+                .catch(err => console.error(err));
+        }
+    </script>
+</body>
+</html>
