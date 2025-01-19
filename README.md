@@ -93,17 +93,14 @@ The image is stored in the number_plates folder, and EasyOCR is used to extract 
 
 Here are some screenshots to illustrate how the project works:
 
-Initial Interface
+### **Initial Interface**
+![Initial Interface](./images/image1.png)
 
-images\image1.png
+### **System Working**
+![System Working](./images/image2.png)
 
-System Working
-
-images\image2.png
-
-Final Results
-
-images\image3.png
+### **Final Results**
+![Final Results](./images/image3.png)
 
 ## Notes
 
