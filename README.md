@@ -6,24 +6,30 @@ This project is designed for detecting Russian car number plates using a webcam.
 
 Car-Number-Plate-Detection
 
+**1) model**
 
-├── model
-│   └── haarcascade_russian_plate_number.xml      # Haarcascade classifier for detecting Russian plates
+     └── haarcascade_russian_plate_number.xml      # Haarcascade classifier for detecting Russian plates
 
-├── static
-│   ├── styles.css                               # CSS styles for the web page
-│   └── background.jpg                          # Background image for the web page
+**2) static**
 
-├── template
-│   └── index.html                              # HTML file for the main page
+    ├── styles.css                               # CSS styles for the web page
+    └── background.jpg                           # Background image for the web page
 
-├── number_plates                              # Folder to save captured number plates
+**3) templates**
+    
+    └── index.html                               # HTML file for the main page
 
-├── requirements.txt                            # List of dependencies to install
+**4) number_plates**                                # Folder to save captured number plates
 
-├── number_plate.py                             # Main script with Flask API for capturing plates and OCR
+**5) images**                                       # Folder to store images for the README
 
+    ├── initial_view.png                         # Screenshot showing the initial interface
+    ├── working_example.png                      # Screenshot showing the system working
+    └── final_result.png                         # Screenshot showing the final results
 
+**6) requirements.txt**                             # List of dependencies to install
+
+**7) number_plate.py**                              # Main script with Flask API for capturing plates and OCR
 
 ## Prerequisites
 
@@ -37,19 +43,19 @@ Follow these steps to get the project running:
 **Create a Virtual Environment:**
 Open your terminal/command prompt and navigate to the project folder. Then, create and activate a virtual environment:
 
-python -m venv venv      # Create a virtual environment
-source venv/bin/activate # For macOS/Linux
-venv\Scripts\activate    # For Windows
+    python -m venv venv      # Create a virtual environment
+    source venv/bin/activate # For macOS/Linux
+    venv\Scripts\activate    # For Windows
 
 **Install the Required Packages:**
 Use the requirements.txt file to install the necessary dependencies:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 **Run the Application:**
 After installing the dependencies, you can run the application using the following command:
 
-python number_plate.py
+    python number_plate.py
 
 ## How to Use
 Open the Web Interface:
