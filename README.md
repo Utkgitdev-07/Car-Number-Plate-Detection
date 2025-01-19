@@ -89,6 +89,22 @@ index.html: The HTML structure for the web interface, allowing users to interact
 The system uses a Haar Cascade classifier to detect the number plate in real-time. Once a plate is detected, the user can press 's' to save the image of the detected number plate.
 The image is stored in the number_plates folder, and EasyOCR is used to extract text from the plate.
 
+## Screenshots
+
+Here are some screenshots to illustrate how the project works:
+
+Initial Interface
+
+images\image1.png
+
+System Working
+
+images\image2.png
+
+Final Results
+
+images\image3.png
+
 ## Notes
 
 The current system is tailored for Russian number plates.
